@@ -1,10 +1,6 @@
 # device-localization
 
-With the proliferation of Personal Mobile Devices (PMDs) over the last several years, the demand for localization applications has increased. These applications typically collect ranging values or timestamps from sensor devices near the user's PMD, and use these values to determine the user's position within a given space. The calculation used to perform localization is typically computationally expensive, and is often offloaded to a secondary device, which introduces further latency. The general architecture of Time Difference of Arrival (TDOA) localization - which uses four timestamp values -  is shown below.
-
-
-![Architecture of TDOA localization](./assets/general-localization.png)
-
+With the proliferation of Personal Mobile Devices (PMDs) over the last several years, the demand for localization applications has increased. These applications typically collect ranging values or timestamps from sensor devices near the user's PMD, and use these values to determine the user's position within a given space. The calculation used to perform localization is typically computationally expensive, and is often offloaded to a secondary device, which introduces further latency. 
 
 The goal of this project is to reduce delay throughout the localization process by reducing two components of the latency:
 
