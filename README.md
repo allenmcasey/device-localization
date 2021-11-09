@@ -13,3 +13,6 @@ A high level view of the architecture is shown below:
 
 
 ![Architecture of localization project](./assets/localization-architecture.png)
+
+
+The client application on the mobile device enables the user to select a Computation Location (Edge or Cloud) and a Computation Type (Optimization or Neural Network). The ranging values and the choices for Location and Type are then sent from the client device to the RaspberryPi broker using a JSON message and the MQTT communication protocol. The broker device then unpacks the received JSON and determines what the destination server is based on the Computation Location and Type. Using a list of server IP addresses listed in configuration data, the broker forwards the JSON ranging values to the appropriate edge or cloud server using TCP sockets. The receiving server performs the desired localization computation using the ranging values and sends the positioning results back to the broker on the same socket. Finally, the broker forwards these positioning results back to the client, completing the round trip.
