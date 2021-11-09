@@ -1,0 +1,8 @@
+platform :ios, '15.0'
+
+target 'Locator' do
+
+  use_frameworks!
+pod 'CocoaMQTT'
+
+end
