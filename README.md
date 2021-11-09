@@ -7,6 +7,8 @@ The goal of this project is to reduce delay throughout the localization process 
 1. The time required to communicate with the secondary device 
 2. The time required for the localization computation 
 
-The first component is explored by using an edge node near the PMD as the secondary computation location in order to reduce transmission delay. This is compared with using a remote EC2 instance in the AWS cloud.
+The first component is explored by using an edge node near the PMD as the secondary computation location in order to reduce transmission delay. This is compared with using a remote EC2 instance in the AWS cloud. The second component is examined by switching from the conventional compute-intensive optimization algorithm for localization to a neural network machine learning model capable of predicting the localization result through regression.
 
-The second component is examined by switching from the conventional compute-intensive optimization algorithm for localization to a neural network machine learning model capable of predicting the localization result through regression.
+A high level view of the architecture is shown below:
+
+![alt text](https://github.com/allenmcasey/device-localization/assets/blob/main/localization-architecture?raw=true)
