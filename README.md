@@ -11,4 +11,4 @@ The first component is explored by using an edge node near the PMD as the second
 
 A high level view of the architecture is shown below:
 
-![alt text](https://github.com/allenmcasey/device-localization/assets/blob/main/localization-architecture?raw=true)
+![Architecture of localization project](./assets/localization-architecture.png)
